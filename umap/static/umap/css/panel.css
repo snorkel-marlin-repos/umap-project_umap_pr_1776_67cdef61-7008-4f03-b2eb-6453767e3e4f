@@ -1,0 +1,97 @@
+.panel {
+    /* Added for playwright to consider the element as non visible  */
+    /* as being out of the visible viewport is not enough  */
+    visibility: hidden;
+    position: absolute;
+    bottom: var(--panel-bottom);
+    overflow-x: auto;
+    z-index: 1010;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    opacity: 0.98;
+    cursor: initial;
+    border-radius: 5px;
+    border: 1px solid var(--color-lightGray);
+    bottom: calc(var(--current-footer-height) + var(--panel-bottom));
+    box-sizing: border-box;
+}
+.panel.dark {
+    border: 1px solid #222;
+}
+.panel.full {
+    width: initial;
+    right: -100%;
+    z-index: 1030;
+}
+.panel.full.on {
+    visibility: visible;
+    right: calc(var(--panel-gutter) * 2 + var(--control-size));
+    left: var(--panel-gutter);
+    height: initial;
+    max-height: initial;
+}
+.panel .umap-popup-content img {
+    /* See https://github.com/Leaflet/Leaflet/commit/61d746818b99d362108545c151a27f09d60960ee#commitcomment-6061847 */
+    max-width: 99% !important;
+}
+.panel .umap-popup-content {
+    max-height: inherit;
+}
+.panel .body {
+    height: calc(100% - var(--panel-header-height)); /* Minus size of toolbox */
+    padding: var(--panel-gutter);
+}
+.panel h3 {
+    line-height: 120%;
+}
+@media all and (orientation:landscape) {
+    .panel {
+        top: var(--current-header-height);
+        margin-top: var(--panel-gutter);
+        width: var(--panel-width);
+        max-width: calc(100% - var(--panel-gutter) * 2 - var(--control-size))
+    }
+    .panel.condensed {
+        max-height: calc(min(500px, 100% - var(--current-header-height) - var(--current-footer-height) - var(--panel-gutter) * 2));
+        bottom: initial;
+    }
+    .panel.right {
+        right: calc(0px - var(--panel-width));
+    }
+    .panel.left {
+        left: calc(0px - var(--panel-width));
+    }
+    .panel.left.on {
+        left: calc(var(--panel-gutter) * 2 + var(--control-size));
+        visibility: visible;
+    }
+    .panel.right.on {
+        right: calc(var(--panel-gutter) * 2 + var(--control-size));
+        visibility: visible;
+    }
+}
+@media all and (orientation:portrait) {
+    .panel {
+        height: 50%;
+        max-height: 400px;
+        width: 100%;
+        bottom: var(--current-footer-height);
+        right: -100%;
+    }
+    .panel.left {
+        left: -100%;
+    }
+    .panel.on {
+        right: 0;
+        left: 0;
+        visibility: visible;
+    }
+    .panel.expanded {
+        height: calc(100% - var(--current-footer-height));
+        max-height: calc(100% - var(--current-footer-height));
+    }
+    .umap-caption-bar-enabled .panel {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

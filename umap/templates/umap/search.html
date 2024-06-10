@@ -1,0 +1,26 @@
+{% extends "umap/content.html" %}
+{% load i18n %}
+{% block maincontent %}
+  {% include "umap/search_bar.html" %}
+  <div class="wrapper">
+    <div class="map_list row">
+      {% if request.GET.q %}
+        {% if maps %}
+          <h2>
+            {% blocktranslate trimmed count counter=count %}
+              {{ count }} map found:
+            {% plural %}
+              {{ count }} maps found:
+            {% endblocktranslate %}
+          </h2>
+          {% include "umap/map_list.html" with prefix="search_map" %}
+        {% else %}
+          <h2>{% trans "No map found." %}</h2>
+        {% endif %}
+      {% else %}
+        <h2>{% trans "Latest created maps" %}</h2>
+        {% include "umap/map_list.html" with prefix="search_map" %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock maincontent %}

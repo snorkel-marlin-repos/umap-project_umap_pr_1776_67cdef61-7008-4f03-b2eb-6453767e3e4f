@@ -1,0 +1,551 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Antti Castrén, 2014
+# Antti Castrén, 2013-2014
+# Jaakko Helleranta <jaakko@helleranta.com>, 2013
+# Jaakko Helleranta <jaakko@helleranta.com>, 2013
+# Jaakko Helleranta <jaakko@helleranta.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: uMap\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-15 13:53+0000\n"
+"PO-Revision-Date: 2013-11-22 14:00+0000\n"
+"Last-Translator: Jaakko Helleranta <jaakko@helleranta.com>, 2013\n"
+"Language-Team: Finnish (http://app.transifex.com/openstreetmap/umap/language/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: forms.py:44 forms.py:70
+msgid "Only editable with secret edit link"
+msgstr "Muokattavissa vain salaisella muokkauslinkillä"
+
+#: forms.py:45 forms.py:71
+msgid "Everyone can edit"
+msgstr "Kuka tahansa saa muokata"
+
+#: forms.py:69 models.py:371
+msgid "Inherit"
+msgstr ""
+
+#: middleware.py:13
+msgid "Site is readonly for maintenance"
+msgstr ""
+
+#: models.py:50
+msgid "name"
+msgstr "nimi"
+
+#: models.py:81
+msgid "details"
+msgstr "tarkemmat tiedot"
+
+#: models.py:82
+msgid "Link to a page where the licence is detailed."
+msgstr "Linkki sivulle, jossa lisenssi on määritetty yksityiskohtaisesti."
+
+#: models.py:92
+msgid "URL template using OSM tile format"
+msgstr "OSM-karttatiiliformaattia mukaileva URL-sapluuna"
+
+#: models.py:98
+msgid "Order of the tilelayers in the edit box"
+msgstr "Taustakarttojen järjestys muokkauslaatikossa"
+
+#: models.py:144 models.py:372
+msgid "Everyone"
+msgstr ""
+
+#: models.py:145 models.py:151 models.py:373
+msgid "Editors only"
+msgstr ""
+
+#: models.py:146 models.py:374
+msgid "Owner only"
+msgstr ""
+
+#: models.py:149
+msgid "Everyone (public)"
+msgstr ""
+
+#: models.py:150
+msgid "Anyone with link"
+msgstr ""
+
+#: models.py:152
+msgid "Blocked"
+msgstr ""
+
+#: models.py:155 models.py:378
+msgid "description"
+msgstr "kuvaus"
+
+#: models.py:156
+msgid "center"
+msgstr "keskitä"
+
+#: models.py:157
+msgid "zoom"
+msgstr "zoomaa"
+
+#: models.py:159
+msgid "locate"
+msgstr "paikanna"
+
+#: models.py:159
+msgid "Locate user on load?"
+msgstr "Paikanna käyttäjä sivua ladattaessa?"
+
+#: models.py:163
+msgid "Choose the map licence."
+msgstr "Valitse kartan lisenssi"
+
+#: models.py:164
+msgid "licence"
+msgstr "lisenssi"
+
+#: models.py:175
+msgid "owner"
+msgstr "omistaja"
+
+#: models.py:179
+msgid "editors"
+msgstr "julkaisija"
+
+#: models.py:184 models.py:392
+msgid "edit status"
+msgstr "muokkaa tilaa"
+
+#: models.py:189
+msgid "share status"
+msgstr "jaa status"
+
+#: models.py:192 models.py:387
+msgid "settings"
+msgstr "asetukset"
+
+#: models.py:320
+msgid "Clone of"
+msgstr "Kloonattu kartasta"
+
+#: models.py:382
+msgid "display on load"
+msgstr "näytä ladattaessa"
+
+#: models.py:383
+msgid "Display this layer on load."
+msgstr "Näytä tämä kerros ladattaessa."
+
+#: templates/404.html:6
+msgid "Take me to the home page"
+msgstr ""
+
+#: templates/auth/user_detail.html:5
+#, python-format
+msgid "Browse %(current_user)s's maps"
+msgstr "Selaa %(current_user)s:n karttoja"
+
+#: templates/auth/user_detail.html:12
+#, python-format
+msgid "%(current_user)s has no maps."
+msgstr ""
+
+#: templates/auth/user_form.html:6
+msgid "My Maps"
+msgstr ""
+
+#: templates/auth/user_form.html:7
+msgid "My Profile"
+msgstr ""
+
+#: templates/auth/user_form.html:20
+msgid "Save"
+msgstr ""
+
+#: templates/auth/user_form.html:25
+msgid "Your current providers"
+msgstr ""
+
+#: templates/auth/user_form.html:31
+msgid "Connect to another provider"
+msgstr ""
+
+#: templates/auth/user_form.html:33
+msgid ""
+"It's a good habit to connect your account to more than one provider, in case"
+" one provider becomes unavailable, temporarily or even permanently."
+msgstr ""
+
+#: templates/auth/user_stars.html:5
+#, python-format
+msgid "Browse %(current_user)s's starred maps"
+msgstr ""
+
+#: templates/auth/user_stars.html:12
+#, python-format
+msgid "%(current_user)s has no starred maps yet."
+msgstr ""
+
+#: templates/base.html:12
+msgid ""
+"uMap lets you create maps with OpenStreetMap layers in a minute and embed "
+"them in your site."
+msgstr ""
+
+#: templates/registration/login.html:16
+msgid "Please log in with your account"
+msgstr ""
+
+#: templates/registration/login.html:28
+msgid "Username"
+msgstr ""
+
+#: templates/registration/login.html:31
+msgid "Password"
+msgstr ""
+
+#: templates/registration/login.html:32
+msgid "Login"
+msgstr ""
+
+#: templates/registration/login.html:37
+msgid "Please choose a provider"
+msgstr "Valitse mieleisesi palveluntarjoaja"
+
+#: templates/umap/about_summary.html:11
+#, python-format
+msgid ""
+"uMap lets you create maps with <a href=\"%(osm_url)s\" />OpenStreetMap</a> "
+"layers in a minute and embed them in your site."
+msgstr ""
+
+#: templates/umap/about_summary.html:21
+msgid "Choose the layers of your map"
+msgstr "Valitse karttaasi sopivat taustakartat ja data-kerrokset"
+
+#: templates/umap/about_summary.html:22
+msgid "Add POIs: markers, lines, polygons..."
+msgstr "Lisää tarvittavat POIt: karttamerkkejä, viivoja, monikulmioita..."
+
+#: templates/umap/about_summary.html:23
+msgid "Manage POIs colours and icons"
+msgstr "Valitse ja hallinnoi POI-merkintöjen värit ja karttakuvakkeet"
+
+#: templates/umap/about_summary.html:24
+msgid "Manage map options: display a minimap, locate user on load…"
+msgstr "Hallitse kartta-optiot: näytä mini-kartta, paikanna käyttäjä sivun latauksessa, ..."
+
+#: templates/umap/about_summary.html:25
+msgid "Batch import geostructured data (geojson, gpx, kml, osm...)"
+msgstr "Geostrukturoidun datan (geojson, gpx, kml, osm...) tuonti eräajona "
+
+#: templates/umap/about_summary.html:26
+msgid "Choose the license for your data"
+msgstr "Valitse tiedoillesi lisenssi"
+
+#: templates/umap/about_summary.html:27
+msgid "Embed and share your map"
+msgstr "Jaa karttasi muille ja/tai liitä se muihin sivustoihin"
+
+#: templates/umap/about_summary.html:37
+#, python-format
+msgid "And it's <a href=\"%(repo_url)s\">open source</a>!"
+msgstr "<a href=\"%(repo_url)s\">Avoin lähdekoodi</a> rulettaa!"
+
+#: templates/umap/about_summary.html:48 templates/umap/navigation.html:38
+#: templates/umap/user_dashboard.html:42
+msgid "Create a map"
+msgstr "Luo uusi kartta"
+
+#: templates/umap/about_summary.html:51
+msgid "Play with the demo"
+msgstr "Tongi demoa sielusi kyllyydestä!"
+
+#: templates/umap/content.html:22
+msgid ""
+"This instance of uMap is currently in read only mode, no creation/edit is "
+"allowed."
+msgstr ""
+
+#: templates/umap/content.html:30
+#, python-format
+msgid ""
+"This is a demo instance, used for tests and pre-rolling releases. If you "
+"need a stable instance, please use <a "
+"href=\"%(stable_url)s\">%(stable_url)s</a>. You can also host your own "
+"instance, it's <a href=\"%(repo_url)s\">open source</a>!"
+msgstr "Tämä on uMapin demo-instanssi, jota käytetään testaamiseen ja väliversioille. Jos tarvitset vakaan version, niin käytäthän <a href=\"%(stable_url)s\">%(stable_url)s</a> :a. Voit myös tarjota oman instanssin - <a href=\"%(repo_url)s\">avoin lähdekoodi</a> rulettaa!"
+
+#: templates/umap/home.html:8
+msgid "Map of the uMaps"
+msgstr "Kartta uMapeista"
+
+#: templates/umap/home.html:14
+msgid "Get inspired, browse maps"
+msgstr "Inspiroidu selaamalla karttoja"
+
+#: templates/umap/login_popup_end.html:2
+msgid "You are logged in. Continuing..."
+msgstr "Sisäänkirjautumisesi onnistui. Jatketahan..."
+
+#: templates/umap/map_list.html:9 views.py:341
+msgid "by"
+msgstr "taholta"
+
+#: templates/umap/map_list.html:17
+msgid "More"
+msgstr "Lisää"
+
+#: templates/umap/map_table.html:6
+msgid "Name"
+msgstr ""
+
+#: templates/umap/map_table.html:7
+msgid "Preview"
+msgstr ""
+
+#: templates/umap/map_table.html:8
+msgid "Who can see"
+msgstr ""
+
+#: templates/umap/map_table.html:9
+msgid "Who can edit"
+msgstr ""
+
+#: templates/umap/map_table.html:10
+msgid "Last save"
+msgstr ""
+
+#: templates/umap/map_table.html:11
+msgid "Owner"
+msgstr ""
+
+#: templates/umap/map_table.html:12
+msgid "Actions"
+msgstr ""
+
+#: templates/umap/map_table.html:25 templates/umap/map_table.html:27
+msgid "Open preview"
+msgstr ""
+
+#: templates/umap/map_table.html:46 templates/umap/map_table.html:48
+msgid "Share"
+msgstr ""
+
+#: templates/umap/map_table.html:51 templates/umap/map_table.html:53
+msgid "Edit"
+msgstr ""
+
+#: templates/umap/map_table.html:56 templates/umap/map_table.html:58
+msgid "Download"
+msgstr ""
+
+#: templates/umap/map_table.html:63 templates/umap/map_table.html:65
+msgid "Clone"
+msgstr ""
+
+#: templates/umap/map_table.html:73 templates/umap/map_table.html:75
+msgid "Delete"
+msgstr ""
+
+#: templates/umap/map_table.html:88
+msgid "first"
+msgstr ""
+
+#: templates/umap/map_table.html:89
+msgid "previous"
+msgstr ""
+
+#: templates/umap/map_table.html:98
+#, python-format
+msgid "Page %(maps_number)s of %(num_pages)s"
+msgstr ""
+
+#: templates/umap/map_table.html:104
+msgid "next"
+msgstr ""
+
+#: templates/umap/map_table.html:105
+msgid "last"
+msgstr ""
+
+#: templates/umap/map_table.html:113
+#, python-format
+msgid "Lines per page: %(per_page)s"
+msgstr ""
+
+#: templates/umap/map_table.html:118
+#, python-format
+msgid "%(count)s maps"
+msgstr ""
+
+#: templates/umap/navigation.html:10 templates/umap/user_dashboard.html:4
+msgid "My Dashboard"
+msgstr ""
+
+#: templates/umap/navigation.html:13
+msgid "Starred maps"
+msgstr ""
+
+#: templates/umap/navigation.html:17
+msgid "Log in"
+msgstr "Kirjaudu palveluun"
+
+#: templates/umap/navigation.html:17
+msgid "Sign in"
+msgstr "Kirjaudu palveluun"
+
+#: templates/umap/navigation.html:21
+msgid "About"
+msgstr "Tietoja"
+
+#: templates/umap/navigation.html:24
+msgid "Help"
+msgstr ""
+
+#: templates/umap/navigation.html:29
+msgid "Change password"
+msgstr ""
+
+#: templates/umap/navigation.html:33
+msgid "Log out"
+msgstr "Kirjaudu ulos palvelusta"
+
+#: templates/umap/password_change.html:4
+msgid "Password change"
+msgstr ""
+
+#: templates/umap/password_change.html:6
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new"
+" password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: templates/umap/password_change.html:13
+msgid "Old password"
+msgstr ""
+
+#: templates/umap/password_change.html:18
+msgid "New password"
+msgstr ""
+
+#: templates/umap/password_change.html:22
+msgid "New password confirmation"
+msgstr ""
+
+#: templates/umap/password_change.html:23
+msgid "Change my password"
+msgstr ""
+
+#: templates/umap/password_change_done.html:4
+msgid "Password change successful"
+msgstr ""
+
+#: templates/umap/password_change_done.html:5
+msgid "Your password was changed."
+msgstr ""
+
+#: templates/umap/search.html:10
+#, python-format
+msgid "%(count)s map found:"
+msgid_plural "%(count)s maps found:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/umap/search.html:18
+msgid "No map found."
+msgstr ""
+
+#: templates/umap/search.html:21
+msgid "Latest created maps"
+msgstr ""
+
+#: templates/umap/search_bar.html:3
+msgid "Search maps"
+msgstr "Etsi karttoja"
+
+#: templates/umap/search_bar.html:14
+msgid "Search"
+msgstr "Etsi"
+
+#: templates/umap/user_dashboard.html:7 templates/umap/user_dashboard.html:26
+msgid "Search my maps"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:11
+#, python-format
+msgid "My Maps (%(count)s)"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:13
+msgid "My profile"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:21 templates/umap/user_dashboard.html:23
+msgid "Map’s title"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:32
+#, python-format
+msgid "Download %(count)s maps"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:42
+msgid "You have no map yet."
+msgstr ""
+
+#: views.py:346
+msgid "View the map"
+msgstr "Katso karttaa"
+
+#: views.py:704
+msgid "See full screen"
+msgstr ""
+
+#: views.py:803
+msgid "Map editors updated with success!"
+msgstr "Kartan toimittajat päivitetty onnistuneesti!"
+
+#: views.py:841
+#, python-format
+msgid "The uMap edit link for your map: %(map_name)s"
+msgstr ""
+
+#: views.py:844
+#, python-format
+msgid "Here is your secret edit link: %(link)s"
+msgstr ""
+
+#: views.py:850
+#, python-format
+msgid "Email sent to %(email)s"
+msgstr ""
+
+#: views.py:861
+msgid "Only its owner can delete the map."
+msgstr "Vain kartan omistaja voi poistaa kartan."
+
+#: views.py:889
+#, python-format
+msgid ""
+"Your map has been cloned! If you want to edit this map from another "
+"computer, please use this link: %(anonymous_url)s"
+msgstr "Karttasi on kloonattu! Jos haluat muokata tätä karttaa joltain muulta tietokoneelta, käytä tätä linkkiä: %(anonymous_url)s"
+
+#: views.py:894
+msgid "Congratulations, your map has been cloned!"
+msgstr "Onneksi olkoon! Karttasi on kloonattu!"
+
+#: views.py:1130
+msgid "Layer successfully deleted."
+msgstr "Kerros onnistuneesti poistettu. Pysyvästi."
+
+#: views.py:1152
+msgid "Permissions updated with success!"
+msgstr ""

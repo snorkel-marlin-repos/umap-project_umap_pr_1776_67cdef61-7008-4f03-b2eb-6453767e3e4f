@@ -1,0 +1,69 @@
+{% extends "umap/content.html" %}
+{% load i18n %}
+{% block head_title %}
+  {{ SITE_NAME }} - {% trans "My Dashboard" %}
+{% endblock head_title %}
+{% block maincontent %}
+  {% trans "Search my maps" as placeholder %}
+  <div class="row">
+    <h2 class="section tabs">
+      <a class="selected" href="{% url 'user_dashboard' %}">{% blocktranslate with count=maps.paginator.count %}My Maps ({{ count }}){% endblocktranslate %}
+      </a>
+      <a href="{% url 'user_profile' %}">{% trans "My profile" %}</a>
+    </h2>
+  </div>
+  <div class="wrapper">
+    <div class="row">
+      <div class="table-header">
+        <form action="{{ request.get_full_path }}" method="get">
+          <span>
+            <label class="sr-only" for="q">{% translate "Map’s title" %}</label>
+            <input id="q"
+                   name="q"
+                   type="search"
+                   placeholder="{% translate "Map’s title" %}"
+                   value="{{ request.GET.q|default:"" }}" />
+          </span>
+          <input type="submit" value="{% trans "Search my maps" %}" />
+        </form>
+        {% if maps.object_list|length > 1 %}
+          <a href="{% url 'user_download' %}?{% spaceless %} {% for map_inst in maps %}map_id={{ map_inst.pk }}{% if not forloop.last %}&{% endif %}{% endfor %} {% endspaceless %}"
+             class="button button-download">
+            {% blocktranslate with count=maps.object_list|length trimmed %}
+              Download {{ count }} maps
+            {% endblocktranslate %}
+          </a>
+        {% endif %}
+      </div>
+      {% if maps or request.GET.q %}
+        {% include "umap/map_table.html" %}
+      {% else %}
+        <div>
+          {% blocktrans %}You have no map yet.{% endblocktrans %} <a href="{% url 'map_new' %}">{% translate "Create a map" %}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endblock maincontent %}
+{% block bottom_js %}
+  {{ block.super }}
+  <script type="text/javascript">
+    !(function () {
+      const CACHE = {}
+      for (const mapOpener of document.querySelectorAll("button.map-opener")) {
+        mapOpener.addEventListener('click', (event) => {
+          const button = event.target.closest('button')
+          button.nextElementSibling.showModal()
+          const mapId = button.dataset.mapId
+          if (!document.querySelector(`#${mapId}_target`).hasChildNodes()) {
+            const previewSettings = JSON.parse(document.getElementById(mapId).textContent)
+            const map = new U.Map(`${mapId}_target`, previewSettings)
+            CACHE[mapId] = map
+          } else {
+            CACHE[mapId].invalidateSize()
+          }
+        })
+      }
+    })()
+  </script>
+{% endblock bottom_js %}

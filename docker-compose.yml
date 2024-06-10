@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+
+  db:
+    healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U postgres"]
+        interval: 2s
+    image: postgis/postgis:14-3.3-alpine
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  app:
+    depends_on:
+      db:
+        condition: service_healthy
+    image: umap/umap:2.0.2
+    ports:
+      - "${PORT-8000}:8000"
+    environment:
+      - DATABASE_URL=postgis://postgres@db/postgres
+      - SECRET_KEY=some-long-and-weirdly-unrandom-secret-key
+      - SITE_URL=https://umap.local/
+      - UMAP_ALLOW_ANONYMOUS=True
+      - DEBUG=1
+    volumes:
+      - data:/srv/umap/uploads
+
+volumes:
+  data:
+  db:

@@ -1,0 +1,24 @@
+### UMap ###
+umap/settings/local.py
+umap/settings/local/*
+docs/_build
+umap/remote_static
+tmp/*
+umap/static/umap/vendors
+site/*
+.pytest_cache/
+node_modules
+umap.conf
+data
+./static
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+playwright/.auth/
+test-results/
